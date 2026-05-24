@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.eval_exec.neomacs</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Neomacs</name>
+  <summary>Extensible, GPU-native text editor</summary>
+  <description>
+    <p>
+      Neomacs is an extensible text editor built with a Rust-based virtual
+      machine and a GPU-native rendering pipeline (wgpu/Vulkan). It runs
+      Emacs Lisp for configuration and extensibility, with a modern rendering
+      architecture that supports smooth animations, variable-height fonts, and
+      hardware-accelerated display.
+    </p>
+  </description>
+  <categories>
+    <category>Development</category>
+    <category>TextEditor</category>
+  </categories>
+  <url type="homepage">https://github.com/eval-exec/neomacs</url>
+  <url type="bugtracker">https://github.com/eval-exec/neomacs/issues</url>
+  <url type="vcs-browser">https://github.com/eval-exec/neomacs</url>
+  <launchable type="desktop-id">io.github.eval_exec.neomacs.desktop</launchable>
+  <provides>
+    <binary>neomacs</binary>
+  </provides>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="0.0.3" date="2026-05-24">
+      <description>
+        <p>Initial Flatpak packaging.</p>
+      </description>
+    </release>
+  </releases>
+</component>

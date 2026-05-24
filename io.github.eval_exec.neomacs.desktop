@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Neomacs
+Comment=Extensible text editor
+Exec=neomacs %F
+Icon=io.github.eval_exec.neomacs
+Terminal=false
+Categories=Development;TextEditor;
+StartupWMClass=neomacs
+MimeType=text/plain;text/x-chdr;text/x-csrc;text/x-c++hdr;text/x-c++src;text/x-java;text/x-python;text/x-shellscript;application/xml;

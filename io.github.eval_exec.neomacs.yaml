@@ -53,12 +53,12 @@ modules:
         cp -a leim ${FLATPAK_DEST}/share/neomacs/
         cp -a info ${FLATPAK_DEST}/share/neomacs/ 2>/dev/null || true
 
-        # Install desktop integration
-        install -Dm644 packaging/flatpak/io.github.eval_exec.neomacs.desktop \
+        # Install desktop integration (files from manifest sources, not upstream git)
+        install -Dm644 io.github.eval_exec.neomacs.desktop \
           ${FLATPAK_DEST}/share/applications/io.github.eval_exec.neomacs.desktop
         install -Dm644 assets/logo-128.png \
           ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/io.github.eval_exec.neomacs.png
-        install -Dm644 packaging/flatpak/io.github.eval_exec.neomacs.metainfo.xml \
+        install -Dm644 io.github.eval_exec.neomacs.metainfo.xml \
           ${FLATPAK_DEST}/share/metainfo/io.github.eval_exec.neomacs.metainfo.xml
 
         # Install docs
@@ -68,3 +68,7 @@ modules:
       - type: git
         url: https://github.com/eval-exec/neomacs
         tag: v0.0.3
+      - type: file
+        path: io.github.eval_exec.neomacs.desktop
+      - type: file
+        path: io.github.eval_exec.neomacs.metainfo.xml
