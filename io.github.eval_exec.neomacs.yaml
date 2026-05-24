@@ -29,6 +29,7 @@ modules:
       env:
         CARGO_HOME: /run/build/neomacs/.cargo
         RUST_BACKTRACE: '1'
+        RUSTFLAGS: '-C link-arg=-ltinfo'
     build-commands:
       - |
         set -euo pipefail
